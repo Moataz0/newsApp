@@ -1,0 +1,8 @@
+export {default as HomeScreen} from "./HomeScreen"
+export {default as NewsDetails} from "./NewsDetails"
+export {default as ProfileScreen} from "./ProfileScreen"
+export {default as SavedScreen} from "./SavedScreen"
+export {default as SearchScreen} from "./SearchScreen"
+export {default as SplashScreen} from "./SplashScreen"
+export {default as WelcomeScreen} from "./WelcomeScreen"
+export {default as DiscoverScreen} from "./DiscoverScreen"
