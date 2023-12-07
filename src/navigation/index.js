@@ -13,6 +13,7 @@ import {
   SplashScreen,
   WelcomeScreen,
 } from "../screens";
+import { Ionicons } from "@expo/vector-icons";
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -41,7 +42,7 @@ const AppNavigation = () => {
               <Ionicons
                 name={iconName}
                 size={customizeSize}
-                color={focused ? "green" : gray}
+                color={focused ? "green" : "gray"}
               />
             );
           },
@@ -49,7 +50,7 @@ const AppNavigation = () => {
           tabBarInactiveTintColor: "gray",
           tabBarLabelStyle: {
             fontSize: 12,
-            fontFamily: "spaceGroteskMedium",
+            fontFamily: "SpaceGroteskMedium",
           },
           tabBarStyle: {
             backgroundColor: colorScheme === "dark" ? "black" : "white",
