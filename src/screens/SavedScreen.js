@@ -192,6 +192,7 @@ export default function SavedScreen() {
         <TouchableOpacity
           onPress={clearSavedArticles}
           className="bg-green-800 py-1 px-4 rounded-lg"
+          disabled={savedArticles.length === 0}
         >
           <Text
             className="font-bold text-lg text-white dark:text-white"
@@ -203,7 +204,11 @@ export default function SavedScreen() {
           </Text>
         </TouchableOpacity>
       </View>
-
+      {savedArticles.length === 0 && (
+        <View className="flex-1 items-center justify-center">
+          <Text className="font-bold text-lg">No items saved</Text>
+        </View>
+      )}
       <View style={{ marginVertical: hp(2) }} className="space-y-2 ">
         <FlatList
           data={savedArticles}
