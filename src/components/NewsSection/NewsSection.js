@@ -9,9 +9,7 @@ export default function NewsSection({ newsMain, label, loadMoreData }) {
   const navigation = useNavigation();
   const [urlList, setUrlList] = useState([]);
   const [bookmarkStatus, setBookmarkStatus] = useState([]);
-  const [showHeader, setShowHeader] = useState(true);
 
-  const [newssMain, setNewsMain] = useState(false);
 
   // Function to format the date
   function formatDate(isoDate) {
